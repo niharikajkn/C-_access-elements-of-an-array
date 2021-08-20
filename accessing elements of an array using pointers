@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int arr[5];
+   int *p;
+   
+   cout<<"Enter elements for the array: ";
+   cin>> arr[0];
+   cout<<"Enter elements for the array: ";
+   cin>> arr[1];
+   cout<<"Enter elements for the array: ";
+   cin>> arr[2];
+   cout<<"Enter elements for the array: ";
+   cin>> arr[3];
+   cout<<"Enter elements for the array: ";
+   cin>> arr[4];
+   
+   cout<<"Enter elements :"<<"\n"<< arr[0]<<"\n"<< arr[1]<<"\n"<< arr[2]<<"\n"<< arr[3]<<"\n"<< arr[4];
+   
+   p = arr;
+   for(int i=0;i<5;i++)
+    {
+        cout<<"\nYou entered: "<<*p<<endl;
+        p++;
+    }    
+   return 0;
+   
+}
